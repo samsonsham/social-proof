@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+/* Primary Colors
+--------------------------------------*/
+/* Neutral Colors
+--------------------------------------*/
+/* Colors by element
+--------------------------------------*/
+/* Breakpoints
+--------------------------------------*/
+/* Typography
+--------------------------------------*/
+/* Reset
+--------------------------------------*/
+html,
+body,
+main,
+h1,
+h2,
+p,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  height: auto;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .container {
+    height: 100vh;
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .container {
+    height: auto;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 70rem;
+    display: grid;
+    grid-template-areas: "header rate" "cards cards";
+    grid-template-rows: 16rem 21rem;
+  }
+}
+
+.attribution {
+  color: #502050;
+  padding: 0 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .attribution {
+    margin-top: 5rem;
+  }
+}
+.attribution a {
+  color: #ee68a4;
+}
+.attribution a:hover {
+  color: #937b92;
+  text-decoration: none;
+}
+
+/* Header
+--------------------------------------*/
+.header {
+  text-align: center;
+  padding: 5.1rem 1.5rem 0 1.5rem;
+}
+@media (min-width: 768px) {
+  .header {
+    grid-area: header;
+    text-align: left;
+    max-width: 28rem;
+    min-width: 20rem;
+    padding: 3.2rem 0 0 0;
+  }
+}
+.header h1 {
+  font-size: 2rem;
+  color: #502050;
+  line-height: 2rem;
+  letter-spacing: -0.05rem;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+.header p {
+  font-size: 0.9rem;
+  color: #937b92;
+  margin-top: 1.6rem;
+  padding: 0 0.1rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  .header p {
+    margin-top: 1rem;
+  }
+}
+
+/* Rate
+--------------------------------------*/
+.rate {
+  margin: 2.6rem 1.5rem 0 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+@media (min-width: 768px) {
+  .rate {
+    align-items: flex-start;
+    grid-area: rate;
+    margin: 4rem 1rem 0 0;
+    gap: 1rem;
+    padding: 0 0 0 1rem;
+  }
+  .rate-container:nth-child(2) {
+    align-self: center;
+  }
+  .rate-container:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+.rate-container {
+  background-color: #f7f2f7;
+  border-radius: 0.5rem;
+  padding: 1rem 0 0.4rem 0;
+}
+@media (min-width: 768px) {
+  .rate-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.6rem 0.5rem 0.3rem 2rem;
+    width: 100%;
+    max-width: 26rem;
+  }
+}
+.rate-star {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .rate-star {
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .rate-star img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.rate-txt {
+  font-size: 0.8rem;
+  color: #502050;
+  padding: 0.8rem 0;
+}
+
+/* Card
+--------------------------------------*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.8rem 1.5rem 0 1.5rem;
+}
+@media (min-width: 768px) {
+  .cards {
+    grid-area: cards;
+    flex-direction: row;
+    height: 17rem;
+    width: 100%;
+    align-items: flex-start;
+    padding: 6rem 0 0 0;
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .cards .card:nth-child(2) {
+    align-self: center;
+  }
+  .cards .card:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+
+.card {
+  background-color: #502050;
+  border-radius: 0.5rem;
+  padding-bottom: 1.8rem;
+  height: min-content;
+}
+.card-person {
+  display: flex;
+  padding: 2.5rem 2rem 0 2rem;
+  gap: 1.5rem;
+}
+.card-person-img {
+  width: 2.5rem;
+}
+.card-person-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card-person-info {
+  display: flex;
+  flex-direction: column;
+}
+.card-person-info-name {
+  color: #f7f2f7;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-top: 0.3rem;
+}
+.card-person-info-desc {
+  color: #ee68a4;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
+}
+.card-text {
+  color: #f7f2f7;
+  font-size: 0.8rem;
+  padding: 1.6rem 1.9rem 0 1.9rem;
+  line-height: 1.4rem;
+}
+
+/*# sourceMappingURL=style.comp.css.map */

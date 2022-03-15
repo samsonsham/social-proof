@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/* Primary Colors
+--------------------------------------*/
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+/* Neutral Colors
+--------------------------------------*/
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+/* Colors by element
+--------------------------------------*/
+$clr-bg-body: $white;
+$clr-bg-card: $very-dark-magenta;
+$clr-bg-rate: $light-grayish-magenta;
+$clr-txt-header: $very-dark-magenta;
+$clr-txt-desc: $dark-grayish-magenta;
+$clr-txt-rate: $very-dark-magenta;
+$clr-txt-person-name: $light-grayish-magenta;
+$clr-txt-person-desc: $soft-pink;
+$clr-txt-card-p: $light-grayish-magenta;
+$clr-txt-attribution: $very-dark-magenta;
+
+/* Breakpoints
+--------------------------------------*/
+$breakpoint-md: 768px;
+$breakpoint-lg: 1000px;
+
+/* Typography
+--------------------------------------*/
+$font-size: 15px;
+$ff-primary: 'Spartan', sans-serif;
+
+/* Reset
+--------------------------------------*/
+html,
+body,
+main,
+h1,
+h2,
+p,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
