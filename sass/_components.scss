@@ -53,6 +53,15 @@
       align-self: flex-end;
     }
   }
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    padding-right: 1.5rem;
+    &-container:nth-child(2) {
+      align-self: flex-start;
+    }
+    &-container:nth-child(3) {
+      align-self: flex-start;
+    }
+  }
   &-container {
     background-color: $clr-bg-rate;
     border-radius: 0.5rem;
@@ -112,12 +121,24 @@
       align-self: flex-end;
     }
   }
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    flex-wrap: wrap;
+    .card:nth-child(2) {
+      align-self: flex-start;
+    }
+    .card:nth-child(3) {
+      align-self: flex-start;
+    }
+  }
 }
 .card {
   background-color: $clr-bg-card;
   border-radius: 0.5rem;
   padding-bottom: 1.8rem;
   height: min-content;
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    flex: 1 1 20rem;
+  }
   &-person {
     display: flex;
     padding: 2.5rem 2rem 0 2rem;
